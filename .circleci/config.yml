@@ -16,7 +16,6 @@ jobs:
                     echo jhipster | sudo -S chmod +x /usr/local/bin/docker-compose
                     docker version
                     docker-compose version
-            # Download and cache dependencies
             - restore_cache:
                 keys:
                     - v1-dependencies-{{ checksum "pom.xml" }}-{{ checksum "package-lock.json" }}
