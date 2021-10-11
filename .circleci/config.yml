@@ -2,7 +2,7 @@ version: 2.1
 jobs:
     build:
         docker:
-            - image: jhipster/jhipster:v7.2.0
+            - image: springframeworkguru/circleci_build
         steps:
             - checkout
             - setup_remote_docker:
